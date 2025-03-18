@@ -3,3 +3,11 @@
   [texto]="'hoje eu queria ter trazido almoço, mas tenho preguiça'"
   [clip]="false">
 </app-text-overflow>
+
+<app-aleatorio
+[min]="1"
+[max]="15"
+(resultado)="processar($event)">
+</app-aleatorio>
+
+<p>{{resultado}}</p>
